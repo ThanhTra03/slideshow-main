@@ -1,0 +1,110 @@
+.slideshow-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 500px;
+    border: 2px solid #007bff; /* Thêm đường viền cho container */
+    border-radius: 10px; /* Làm tròn các góc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Thêm bóng cho container */
+    background-color: #f9f9f9; /* Nền sáng cho container */
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px; /* Làm tròn các góc cho ảnh */
+    overflow: hidden; /* Giúp làm sạch viền ảnh */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi khi thay đổi kích thước */
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+  }
+  
+  .top-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1; /* Đảm bảo nút ở trên cùng hình ảnh */
+  }
+  
+  .random-button, .resize-button {
+    background-color: rgba(137, 184, 235, 0.7); /* Màu nền với độ trong suốt */
+    color: white;
+    border: none;
+    padding: 8px 10px; /* Điều chỉnh padding cho nút */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s; /* Thêm hiệu ứng chuyển đổi */
+  }
+  
+  .random-button:hover, .resize-button:hover {
+    background-color: rgba(137, 184, 235, 1); /* Khi hover, nút sẽ rõ hơn */
+    transform: scale(1.05); /* Phóng to nút khi hover */
+  }
+  
+  .slideshow-controls {
+    margin-top: 10px;
+    display: flex; /* Sử dụng Flexbox để sắp xếp các nút điều khiển */
+    justify-content: center; /* Căn giữa các nút */
+  }
+  
+  .slideshow-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.2s; /* Thêm hiệu ứng chuyển đổi */
+  }
+  
+  .slideshow-controls button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Phóng to nút khi hover */
+  }
+  
+  .slideshow-indicator {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    opacity: 0.7;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .thumbnail-container {
+    position: absolute; /* Để hiển thị trên cùng */
+    z-index: 100; /* Để đảm bảo ảnh nằm trên cùng */
+    cursor: pointer; /* Thêm con trỏ chuột */
+  }
+  
+  .thumbnail-image {
+    width: 150px; /* Kích thước của thumbnail */
+    height: auto;
+    border: 2px solid rgba(137, 184, 235, 0.8); /* Đường viền cho thumbnail */
+    border-radius: 5px; /* Làm tròn các góc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Thêm bóng cho thumbnail */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động */
+  }
+  
+  .thumbnail-image:hover {
+    transform: scale(1.05); /* Phóng to thumbnail khi hover */
+  }
+  
